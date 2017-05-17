@@ -24,4 +24,12 @@ logging:                                              # 配置日志级别,让hi
 management:
   security:
     enabled: false                                    # 关闭权限认证
+    
+info:
+   app:
+     name:  @project.artifactId@
+     encoding: @project.build.sourceEncoding@
+     java :
+       source: @java.version@
+       target: @java.version@
   
