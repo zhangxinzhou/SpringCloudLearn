@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+   jpa:
+     generate-ddl: false
+     show-sql: true
+     hibernate:
+       ddl-auto: false
+   datasource:                                        # 指定数据源
+     driver-class-name: com.mysql.jdbc.Driver         # mysql数据库
+     url: jdbc:mysql://localhost/test?useSSL=false    # url
+     username: root                                   # 数据库用户名
+     password: root                                   # 数据库密码
+     schema: classpath:schema.sql                     # 指定数据库的建表脚本
+     data: classpath:data.sql                         # 指定数据库的数据脚本
+    
+logging:                                              # 配置日志级别,让hibernate打印执行的sql
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+
+
+  
