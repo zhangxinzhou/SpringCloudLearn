@@ -8,5 +8,6 @@ public class ConfigClientApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigClientApplication.class, args);
+		//TODO 未搞定
 	}
 }
