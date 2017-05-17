@@ -21,5 +21,7 @@ logging:                                              # 配置日志级别,让hi
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     org.hibernate.type.descriptor.sql.BasicExtractor: trace
 
-
+management:
+  security:
+    enabled: false                                    # 关闭权限认证
   
