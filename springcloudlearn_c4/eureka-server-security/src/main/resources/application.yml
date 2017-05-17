@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: eureka-server-colony
+  profiles:
+    active:
+    - peer3
+security:
+  basic:
+    enabled: true                       # 开启认证
+  user:           
+    name: user                          # 登录用户名
+    password: user                      # 登录密码
+                                        # 分割配置文件(第一段未指定profile,所以对所有的profile生效)
+---                             
+spring:
+  profiles: peer1
+server:
+  port: 8761
+eureka:
+  instance:                           
+    hostname: peer1                      # 指定profile=peer1,主机名是peer1
+  client:
+    service-url:                         # 向其他服务注册自己(不要向自己注册自己),开启认证之后,注册服务需要以http://username:password@ip(url):port/eureka/方式注册自己的服务
+      defaultZone: http://${security.user.name}:${security.user.password}@peer2:8762/eureka,http://${security.user.name}:${security.user.password}@peer3:8763/eureka
+---
+spring:
+  profiles: peer2
+server:
+  port: 8762
+eureka:
+  instance:                           
+    hostname: peer2                      # 指定profile=peer2,主机名是peer2
+  client:
+    service-url:                         # 向其他服务注册自己(不要向自己注册自己)
+      defaultZone: http://${security.user.name}:${security.user.password}@peer1:8761/eureka,http://${security.user.name}:${security.user.password}@peer3:8763/eureka
+---
+spring:
+  profiles: peer3
+server:
+  port: 8763
+eureka:
+  instance:                           
+    hostname: peer3                      # 指定profile=peer3,主机名是peer3
+  client:
+    service-url:                         # 向其他服务注册自己(不要向自己注册自己)
+      defaultZone: http://${security.user.name}:${security.user.password}@peer1:8761/eureka,http://${security.user.name}:${security.user.password}@peer2:8762/eureka

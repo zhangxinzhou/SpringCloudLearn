@@ -1,0 +1,37 @@
+server:
+  port: 8080
+spring:
+   application:
+      name: eureka-client-provider
+   jpa:
+     generate-ddl: false
+     show-sql: true
+     hibernate:
+       ddl-auto: false
+   datasource:                                        # 指定数据源
+     driver-class-name: com.mysql.jdbc.Driver         # mysql数据库
+     url: jdbc:mysql://localhost/test?useSSL=false    # url
+     username: root                                   # 数据库用户名
+     password: root                                   # 数据库密码
+     schema: classpath:schema.sql                     # 指定数据库的建表脚本
+     data: classpath:data.sql                         # 指定数据库的数据脚本
+
+    
+logging:                                              # 配置日志级别,让hibernate打印执行的sql
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+
+management:
+  security:
+    enabled: false                                    # 关闭权限认证
+    
+eureka:
+  client:                                             # 开启认证之后,注册服务需要以http://username:password@ip(url):port/eureka/方式注册自己的服务
+    service-url:                                      # 微服务也可以只配置某个节点(这里配置了三个),也能正常注册到eureka server集群,因为多个eureka server之间会相互注册
+      defaultZone: http://user:user@peer1:8761/eureka/,http://user:user@peer2:8762/eureka/,http://user:user@peer3:8763/eureka/
+
+
+  
