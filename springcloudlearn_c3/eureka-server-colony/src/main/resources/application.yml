@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: eureka-server-colony
+  profiles:
+    active:
+    - peer3
+                                        # 分割配置文件(第一段未指定profile,所以对所有的profile生效)
+---                             
+spring:
+  profiles: peer1
+server:
+  port: 8761
+eureka:
+  instance:                           
+    hostname: peer1                      # 指定profile=peer1,主机名是peer1
+  client:
+    service-url:                         # 向其他服务注册自己(不要向自己注册自己)
+      defaultZone: http://peer2:8762/eureka,http://peer3:8763/eureka
+---
+spring:
+  profiles: peer2
+server:
+  port: 8762
+eureka:
+  instance:                           
+    hostname: peer2                      # 指定profile=peer2,主机名是peer2
+  client:
+    service-url:                         # 向其他服务注册自己(不要向自己注册自己)
+      defaultZone: http://peer1:8761/eureka,http://peer3:8763/eureka
+---
+spring:
+  profiles: peer3
+server:
+  port: 8763
+eureka:
+  instance:                           
+    hostname: peer3                      # 指定profile=peer3,主机名是peer3
+  client:
+    service-url:                         # 向其他服务注册自己(不要向自己注册自己)
+      defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka
