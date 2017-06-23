@@ -1,0 +1,17 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false                            # 是否将自己注册到eureka server,默认为true.由于当前应用就是eureka server,设为false
+    fetch-registry: false                                  # 是否从eureka server或者注册信息,默认为true.因为是单点eureka server,不需要其他节点的数据,设为false
+    service-url:                                           # 设置与eureka server交互的地址,查询服务和注册服务都要依赖这个地址.多个地址用,隔开
+      defaultZone: http://localhost:${server.port}/eureka
+  server:
+    # 禁用自我保护模式,不注销任何服务
+    enable-self-preservation: false
+  instance:
+    prefer-ip-address: true
+    #eureka 多网卡的服务器想要注册到eureka server上的ip如何指定(以下是极端模式)
+    ip-address: 127.0.0.1
+    
+   
