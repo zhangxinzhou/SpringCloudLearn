@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: eureka-client-consumer
+    
+management:
+  security:
+    enabled: false                                    # 关闭权限认证
+
+# eureka-client-provider服务提供者的名称 
+eureka-client-provider:
+   ribbon:
+     listOfServers: localhost:8080,localhost:8081
+
+

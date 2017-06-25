@@ -1,0 +1,17 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: eureka-client-consumer
+user.userServiceUrl: http://localhost:8080/user/
+
+management:
+  security:
+    enabled: false                                    # 关闭权限认证
+
+# ribbon随机调用服务(这样就不会均摊了)
+eureka-client-provider:
+   ribbon:
+     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+    
