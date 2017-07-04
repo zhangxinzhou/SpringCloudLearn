@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ZuulConfig {
 
-	@RefreshScope
+	@RefreshScope //zull配置动态化
 	@ConfigurationProperties("zuul")
 	public ZuulProperties zuulProperties(){
 		return new ZuulProperties();
