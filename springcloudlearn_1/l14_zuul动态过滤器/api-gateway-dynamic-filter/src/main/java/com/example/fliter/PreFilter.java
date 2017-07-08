@@ -14,6 +14,7 @@ public class PreFilter extends ZuulFilter{
 
 	@Override
 	public boolean shouldFilter() {
+		//修改此处动态的开启或者关闭过滤器(文件位置api-gateway-dynamic-filter\filter\pre\PreFilter.groovy)
 		return true;
 	}
 
