@@ -1,0 +1,10 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie
+
+logging:
+  level:
+    com.example.service.UserFeignClient: DEBUG
+    
