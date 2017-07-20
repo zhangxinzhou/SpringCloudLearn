@@ -29,7 +29,11 @@ public class ConsumerController {
 	@HystrixCommand(fallbackMethod="findByIdFallback",commandProperties={
 			@HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value="5000"),
 			@HystrixProperty(name="metrics.rollingStats.timeInMilliseconds",value="1000")
-	})
+			},threadPoolProperties={
+					@HystrixProperty(name="coreSize",value="1"),
+					@HystrixProperty(name="maxQueueSize",value="10")
+			}
+			)
 	@GetMapping("/user/{id}")
 	public User findUserById(@PathVariable Long id){
 		return restTemplate.getForObject("http://eureka-client-provider/"+id, User.class);
