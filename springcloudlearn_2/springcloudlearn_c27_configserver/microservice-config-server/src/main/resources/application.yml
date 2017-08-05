@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/aabbcc5050/SpringCloudLearn
+          username: username
+          password: password
+management:
+  security:
+    enabled: false
