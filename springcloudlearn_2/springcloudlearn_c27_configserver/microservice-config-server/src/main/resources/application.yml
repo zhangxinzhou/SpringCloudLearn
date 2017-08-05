@@ -7,9 +7,22 @@ spring:
     config:
       server:
         git:
+          # git仓库地址
           uri: https://github.com/aabbcc5050/SpringCloudLearn
+          # git仓库文件夹路径
+          search-paths: config-repo
+          # 默认情况下,在配置被首次请求时,config server才会clone git仓库,下面配置可以让config server在启动时就clone git仓库
+          clone-on-start: true
+          # git用户名,因为不是private项目所以不需要
           username: username
+          # git用户名密码,因为不是private项目所以不需要
           password: password
+          
 management:
   security:
     enabled: false
+    
+logging:
+  level:
+    org.springframework.cloud: debug
+    org.springframework.boot: debug
