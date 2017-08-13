@@ -1,6 +1,11 @@
 spring:
   application:
     name: microservice-foo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       # config server服务的地址
