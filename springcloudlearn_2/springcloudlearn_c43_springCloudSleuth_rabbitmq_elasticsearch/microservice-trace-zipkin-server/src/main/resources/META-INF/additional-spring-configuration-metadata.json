@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "zipkin.storage.type",
+    "type": "java.lang.String",
+    "description": "A description for 'zipkin.storage.type'"
+  },
+  {
+    "name": "zipkin.storage.elasticsearch.cluster",
+    "type": "java.lang.String",
+    "description": "A description for 'zipkin.storage.elasticsearch.cluster'"
+  },
+  {
+    "name": "zipkin.storage.elasticsearch.hosts",
+    "type": "java.lang.String",
+    "description": "A description for 'zipkin.storage.elasticsearch.hosts'"
+  },
+  {
+    "name": "zipkin.storage.elasticsearch.index",
+    "type": "java.lang.String",
+    "description": "A description for 'zipkin.storage.elasticsearch.index'"
+  },
+  {
+    "name": "zipkin.storage.elasticsearch.index-shards",
+    "type": "java.lang.String",
+    "description": "A description for 'zipkin.storage.elasticsearch.index-shards'"
+  },
+  {
+    "name": "zipkin.storage.elasticsearch.index-replicas",
+    "type": "java.lang.String",
+    "description": "A description for 'zipkin.storage.elasticsearch.index-replicas'"
+  }
+]}
