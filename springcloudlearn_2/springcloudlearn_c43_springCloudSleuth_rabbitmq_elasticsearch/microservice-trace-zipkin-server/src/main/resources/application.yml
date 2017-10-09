@@ -5,7 +5,7 @@ spring:
     host: localhost
     port: 5672
     username: guest
-    password: guests
+    password: guest
     
 zipkin:
   storage:
