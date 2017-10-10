@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigClientController {
 
-	//@Value("${profile}")
-	@Value("${from}")
+	@Value("${profile}")
 	private String profile;
 	
 	@Autowired

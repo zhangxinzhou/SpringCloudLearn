@@ -9,16 +9,15 @@ spring:
         git:
           uri: https://github.com/aabbcc5050/SpringCloudLearn
           search-paths: config-repo
+    bus:
+      trace:
+        enabled: true                               # 开启cloud bus的跟踪
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/    # http://eureka.didispace.com/eureka/ 
       
 management:
   security:
