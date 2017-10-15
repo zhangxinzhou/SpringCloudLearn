@@ -1,0 +1,258 @@
+√ª”–≥…π¶!config-client”–Œ Ã‚
+2017-10-16 07:46:37.843[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.c.c.ConfigServicePropertySourceLocator[0;39m [2m:[0;39m Fetching config from server at: http://localhost:8080/
+[2m2017-10-16 07:46:42.093[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.c.c.ConfigServicePropertySourceLocator[0;39m [2m:[0;39m Located environment: name=microservice-config-client, profiles=[dev], label=master, version=def0b30f38a2077f145618f9384420c79addf280, state=null
+[2m2017-10-16 07:46:42.094[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mb.c.PropertySourceBootstrapConfiguration[0;39m [2m:[0;39m Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient']]]
+[2m2017-10-16 07:46:42.097[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.example.ConfigClientApplication     [0;39m [2m:[0;39m No active profile set, falling back to default profiles: default
+[2m2017-10-16 07:46:42.100[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36ms.c.a.AnnotationConfigApplicationContext[0;39m [2m:[0;39m Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3db65c0d: startup date [Mon Oct 16 07:46:42 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b43529a
+[2m2017-10-16 07:46:42.223[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.support.GenericApplicationContext [0;39m [2m:[0;39m Refreshing org.springframework.context.support.GenericApplicationContext@61394494: startup date [Mon Oct 16 07:46:42 CST 2017]; root of context hierarchy
+[2m2017-10-16 07:46:42.281[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.example.ConfigClientApplication     [0;39m [2m:[0;39m Started ConfigClientApplication in 4.673 seconds (JVM running for 15.302)
+[2m2017-10-16 07:46:42.416[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.a.r.c.CachingConnectionFactory      [0;39m [2m:[0;39m Created new connection: SimpleConnection@28ee882c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 1619]
+[2m2017-10-16 07:46:42.580[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.integration.channel.DirectChannel   [0;39m [2m:[0;39m Channel 'microservice-config-client:8081.springCloudBusOutput' has 1 subscriber(s).
+[2m2017-10-16 07:46:42.582[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.support.DefaultLifecycleProcessor [0;39m [2m:[0;39m Starting beans in phase 0
+[2m2017-10-16 07:46:42.633[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.endpoint.EventDrivenConsumer      [0;39m [2m:[0;39m Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2m2017-10-16 07:46:42.634[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.channel.PublishSubscribeChannel   [0;39m [2m:[0;39m Channel 'microservice-config-client:8081.errorChannel' has 1 subscriber(s).
+[2m2017-10-16 07:46:42.634[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.endpoint.EventDrivenConsumer      [0;39m [2m:[0;39m started _org.springframework.integration.errorLogger
+[2m2017-10-16 07:46:42.634[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.support.DefaultLifecycleProcessor [0;39m [2m:[0;39m Starting beans in phase 2147482647
+[2m2017-10-16 07:46:42.649[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.s.b.r.RabbitMessageChannelBinder  [0;39m [2m:[0;39m declaring queue for inbound: springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw, bound to: springCloudBus
+[2m2017-10-16 07:46:42.716[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.a.i.AmqpInboundChannelAdapter     [0;39m [2m:[0;39m started inbound.springCloudBus.anonymous.zrzg4X1zTXmODtpTGs4P_g
+[2m2017-10-16 07:46:42.717[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.endpoint.EventDrivenConsumer      [0;39m [2m:[0;39m Adding {message-handler:inbound.springCloudBus.default} as a subscriber to the 'bridge.springCloudBus' channel
+[2m2017-10-16 07:46:42.717[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.endpoint.EventDrivenConsumer      [0;39m [2m:[0;39m started inbound.springCloudBus.default
+[2m2017-10-16 07:46:42.717[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.support.DefaultLifecycleProcessor [0;39m [2m:[0;39m Starting beans in phase 2147483647
+[2m2017-10-16 07:46:42.726[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mationConfigEmbeddedWebApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.configClientController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'profile' in value "{${profile}}"
+[2m2017-10-16 07:46:42.727[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36ms.c.a.AnnotationConfigApplicationContext[0;39m [2m:[0;39m Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3db65c0d: startup date [Mon Oct 16 07:46:42 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b43529a
+[2m2017-10-16 07:46:42.731[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.s.c.ThreadPoolTaskScheduler         [0;39m [2m:[0;39m Shutting down ExecutorService 'taskScheduler'
+[2m2017-10-16 07:46:42.731[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Unregistering JMX-exposed beans on shutdown
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Unregistering JMX-exposed beans
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Summary on shutdown: errorChannel
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Summary on shutdown: springCloudBusOutput
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Summary on shutdown: springCloudBusInput
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Summary on shutdown: nullChannel
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.i.monitor.IntegrationMBeanExporter  [0;39m [2m:[0;39m Summary on shutdown: _org.springframework.integration.errorLogger.handler
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Unregistering JMX-exposed beans on shutdown
+[2m2017-10-16 07:46:42.732[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.j.e.a.AnnotationMBeanExporter       [0;39m [2m:[0;39m Unregistering JMX-exposed beans
+[2m2017-10-16 07:46:42.774[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2m2017-10-16 07:46:42.803[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mutoConfigurationReportLoggingInitializer[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[2m2017-10-16 07:46:42.815[0;39m [31mERROR[0;39m [35m9200[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.configClientController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'profile' in value "{${profile}}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:345) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:359) ~[spring-cloud-context-1.1.9.RELEASE.jar:1.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:176) ~[spring-cloud-context-1.1.9.RELEASE.jar:1.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:340) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.start(RefreshScope.java:121) ~[spring-cloud-context-1.1.9.RELEASE.jar:1.1.9.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_141]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:253) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:174) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:137) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) ~[spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.7.RELEASE.jar:1.4.7.RELEASE]
+	at com.example.ConfigClientApplication.main(ConfigClientApplication.java:10) [classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'profile' in value "{${profile}}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 31 common frames omitted
+
+[2m2017-10-16 07:46:43.717[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-1][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Restarting Consumer: tags=[{amq.ctag-vnPx1LrCJWz05EC25-gclg=springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw}], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@78d73b1b Shared Rabbit Connection: null, acknowledgeMode=AUTO local queue size=0
+[2m2017-10-16 07:46:43.725[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-2][0;39m [36mo.s.a.r.c.CachingConnectionFactory      [0;39m [2m:[0;39m Created new connection: SimpleConnection@13e2c603 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 1620]
+[2m2017-10-16 07:46:48.726[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-2][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Consumer raised exception, processing can restart if the connection factory supports it
+
+java.lang.IllegalStateException: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b43529a has not been refreshed yet
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1065) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1185) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.initialize(RabbitAdmin.java:450) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin$11.onCreate(RabbitAdmin.java:419) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CompositeConnectionListener.onCreate(CompositeConnectionListener.java:33) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:559) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils$1.createConnection(ConnectionFactoryUtils.java:90) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.doGetTransactionalResourceHolder(ConnectionFactoryUtils.java:140) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.getTransactionalResourceHolder(ConnectionFactoryUtils.java:76) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:503) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1338) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_141]
+
+[2m2017-10-16 07:46:48.726[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-2][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Restarting Consumer: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+[2m2017-10-16 07:46:48.741[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Failed to declare queue:springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw
+[2m2017-10-16 07:46:48.742[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Queue declaration failed; retries left=3
+
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:619) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:518) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1338) [spring-rabbit-1.6.10.RELEASE.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_141]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:105) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:101) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:123) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:884) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:60) ~[amqp-client-3.6.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_141]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:929) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at com.sun.proxy.$Proxy118.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:598) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	... 3 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:32) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:360) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:225) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:117) ~[amqp-client-3.6.5.jar:na]
+	... 12 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:483) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:320) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:143) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:90) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:559) ~[amqp-client-3.6.5.jar:na]
+	... 1 common frames omitted
+
+[2m2017-10-16 07:46:53.744[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Failed to declare queue:springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw
+[2m2017-10-16 07:46:53.745[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Queue declaration failed; retries left=2
+
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:619) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:518) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1338) [spring-rabbit-1.6.10.RELEASE.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_141]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:105) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:101) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:123) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:884) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:60) ~[amqp-client-3.6.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_141]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:929) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at com.sun.proxy.$Proxy118.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:598) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	... 3 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:32) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:360) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:225) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:117) ~[amqp-client-3.6.5.jar:na]
+	... 12 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:483) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:320) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:143) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:90) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:559) ~[amqp-client-3.6.5.jar:na]
+	... 1 common frames omitted
+
+[2m2017-10-16 07:46:58.746[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Failed to declare queue:springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw
+[2m2017-10-16 07:46:58.747[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Queue declaration failed; retries left=1
+
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:619) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:518) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1338) [spring-rabbit-1.6.10.RELEASE.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_141]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:105) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:101) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:123) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:884) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:60) ~[amqp-client-3.6.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_141]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:929) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at com.sun.proxy.$Proxy118.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:598) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	... 3 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:32) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:360) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:225) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:117) ~[amqp-client-3.6.5.jar:na]
+	... 12 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:483) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:320) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:143) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:90) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:559) ~[amqp-client-3.6.5.jar:na]
+	... 1 common frames omitted
+
+[2m2017-10-16 07:47:03.748[0;39m [33m WARN[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.listener.BlockingQueueConsumer  [0;39m [2m:[0;39m Failed to declare queue:springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw
+[2m2017-10-16 07:47:03.749[0;39m [31mERROR[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Consumer received fatal exception on startup
+
+org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:546) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1338) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_141]
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:619) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:518) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	... 2 common frames omitted
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:105) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:101) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:123) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:884) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:60) ~[amqp-client-3.6.5.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_141]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_141]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_141]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:929) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	at com.sun.proxy.$Proxy118.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:598) ~[spring-rabbit-1.6.10.RELEASE.jar:na]
+	... 3 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:32) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:360) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:225) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:117) ~[amqp-client-3.6.5.jar:na]
+	... 12 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'springCloudBus.anonymous.7i3IMwXtQxuGH0o-hWFqdw' in vhost '/', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:483) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:320) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:143) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:90) ~[amqp-client-3.6.5.jar:na]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:559) ~[amqp-client-3.6.5.jar:na]
+	... 1 common frames omitted
+
+[2m2017-10-16 07:47:03.750[0;39m [31mERROR[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Stopping container from aborted consumer
+[2m2017-10-16 07:47:03.750[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Waiting for workers to finish.
+[2m2017-10-16 07:47:03.751[0;39m [32m INFO[0;39m [35m9200[0;39m [2m---[0;39m [2m[xuGH0o-hWFqdw-3][0;39m [36mo.s.a.r.l.SimpleMessageListenerContainer[0;39m [2m:[0;39m Successfully waited for workers to finish.
